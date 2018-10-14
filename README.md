@@ -6,8 +6,8 @@ This library works best in a combination with: [influxdb-java](https://github.co
 Here is example of usage:
 
 ```java
-import com.github.bkuzmic.influxdb.query.dsl.impl.InfluxQueryBuilderImpl;
-import static com.github.bkuzmic.influxdb.query.dsl.InfluxQueryBuilder.*;
+import com.github.bkuzmic.influxdb.query.builder.impl.InfluxQueryBuilderImpl;
+import static com.github.bkuzmic.influxdb.query.builder.InfluxQueryBuilder.*;
 
 class App {
 
