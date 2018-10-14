@@ -1,4 +1,4 @@
-# InfluxDb Query DSL
+# InfluxDb Query Builder
 
 Build InfluxDb queries using fluent API builder. 
 This library works best in a combination with: [influxdb-java](https://github.com/influxdata/influxdb-java)
@@ -6,13 +6,13 @@ This library works best in a combination with: [influxdb-java](https://github.co
 Here is example of usage:
 
 ```java
-import com.github.bkuzmic.influxdb.query.dsl.impl.InfluxQueryDslImpl;
-import static com.github.bkuzmic.influxdb.query.dsl.InfluxQueryDsl.*;
+import com.github.bkuzmic.influxdb.query.dsl.impl.InfluxQueryBuilderImpl;
+import static com.github.bkuzmic.influxdb.query.dsl.InfluxQueryBuilder.*;
 
 class App {
 
     public static void main(String[] args) {
-        InfluxQueryDsl influxQueryDsl = new InfluxQueryDslImpl();
+        InfluxQueryBuilder influxQueryBuilder = new InfluxQueryBuilderImpl();
         
         List<String> nodes = new ArrayList<>();
         nodes.add("1");
@@ -48,4 +48,4 @@ class App {
 }
 ```
                 
-More examples can be found in [InfluxQueryDslTest](https://github.com/bkuzmic/influxdb-query-dsl/tree/master/src/test/java/com/github/bkuzmic/influxdb/query/dsl/InfluxQueryDslTest.java).               
+More examples can be found in [InfluxQueryBuilderTest](https://github.com/bkuzmic/influxdb-query-builder/tree/master/src/test/java/com/github/bkuzmic/influxdb/query/builder/InfluxQueryBuilderTest.java).               
